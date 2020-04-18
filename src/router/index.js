@@ -1,16 +1,15 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import EventCreate from "../views/EventCreate.vue";
-import EventList from "../views/EventList.vue";
-import EventShow from "../views/EventShow.vue";
-import NotFound from "../components/NotFound.vue";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import EventCreate from '../views/EventCreate.vue'
+import EventList from '../views/EventList.vue'
+import EventShow from '../views/EventShow.vue'
+import NotFound from '../components/NotFound.vue'
 
-
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [{
-    path: "/",
-    name: "event-list",
+    path: '/',
+    name: 'event-list',
     component: EventList
   },
   // {
@@ -25,25 +24,25 @@ const routes = [{
   //   // alias: "/about-us"
   // },
   {
-    path: "/event/create",
-    name: "event-create",
+    path: '/event/create',
+    name: 'event-create',
     component: EventCreate
   },
   {
-    path: "/event/:id",
-    name: "event-show",
+    path: '/event/:id',
+    name: 'event-show',
     component: EventShow,
     props: true
   },
   {
-    path: "*",
+    path: '*',
     component: NotFound
   }
-];
+]
 
 const router = new VueRouter({
   mode: 'history',
   routes
-});
+})
 
-export default router;
+export default router
