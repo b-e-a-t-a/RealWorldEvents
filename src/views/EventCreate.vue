@@ -12,10 +12,12 @@
 import { mapState } from 'vuex' // to map state into computed properties
 
 export default {
-  computed: mapState({
-    user: 'user',
-    categories: 'categories'
-  })
+  computed: {
+    localComputed() {
+      return console.log('other Computed property')
+    },
+    ...mapState(['user', 'categories'])
+  }
 }
 </script>
 
