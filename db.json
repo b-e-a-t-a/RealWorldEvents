@@ -79,6 +79,42 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 7168046,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Testing working",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 2643122,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Planting Trees",
+      "description": "We're going to plant trees",
+      "location": "Kabaty forest",
+      "date": "2020-04-30T17:20:00.000Z",
+      "time": "12:00",
+      "attendees": []
     }
   ]
 }
