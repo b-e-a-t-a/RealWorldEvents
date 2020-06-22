@@ -40,40 +40,30 @@ export default new Vuex.Store({
         done: false
       }
     ],
-    events: [{
-        id: 1,
-        title: 'aaa',
-        organizer: 'qqq'
-      },
-      {
-        id: 2,
-        title: 'bbb',
-        organizer: 'qqq'
-      },
-      {
-        id: 3,
-        title: 'ccc',
-        organizer: 'qqq'
-      },
-      {
-        id: 4,
-        title: 'ddd',
-        organizer: 'rrr'
-      }
-    ]
+    events: []
   },
   mutations: {
     ADD_EVENT(state, event) {
       state.events.push(event)
+    },
+    SET_EVENTS(state, events) {
+      state.events = events
     }
   },
   actions: {
-    createEvent({
-      commit
-    }, event) {
+    createEvent({ commit }, event) {
       return EventService.postEvent(event).then(() => {
         commit('ADD_EVENT', event)
       })
+    },
+    fetchEvents({ commit }) {
+      EventService.getEvents()
+        .then(response => {
+          commit('SET_EVENTS', response.data) //call a mutation sending in payload of response data
+        })
+        .catch(error => {
+          console.log('There was an error:' + error.response)
+        })
     }
   },
   modules: {},
