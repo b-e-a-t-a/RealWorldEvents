@@ -32,7 +32,7 @@ export default {
   },
   created() {
     this.perPage = 3 // Setting perPage here and not in data means it won't be reactive
-    this.$store.dispatch('fetchEvents', {
+    this.$store.dispatch('event/fetchEvents', {
       perPage: this.perPage,
       page: this.page
     })
