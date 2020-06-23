@@ -104,7 +104,7 @@ export default {
   //     // return this.$store.categories.length
   //     return this.$store.getters.catLength
   //   },
-  //   ...mapGetters(['getEventById']),
+  //   ...mapGetters('event', ['getEventById']),
   //   ...mapState(['user', 'categories'])
   // }
 }

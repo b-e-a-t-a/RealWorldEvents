@@ -56,15 +56,6 @@ export const actions = {
 }
 
 export const getters = {
-  catLength: state => {
-    return state.categories.length
-  },
-  doneTodos: state => {
-    return state.todos.filter(todo => todo.done)
-  },
-  activeTodosCount: (state, getters) => {
-    return state.todos.length - getters.doneTodos.length
-  },
   getEventById: state => id => {
     return state.events.find(event => event.id === id)
   }
