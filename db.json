@@ -1,5 +1,6 @@
 {
-  "events": [{
+  "events": [
+    {
       "id": 5928101,
       "user": {
         "id": "abc123",
@@ -12,7 +13,8 @@
       "location": "Meow Town",
       "date": "Aug 28 2019",
       "time": "2:00",
-      "attendees": [{
+      "attendees": [
+        {
           "id": "abc123",
           "name": "Adam Jahr"
         },
@@ -43,7 +45,8 @@
       "location": "Catlandia",
       "date": "Nov 12 2019",
       "time": "7:00",
-      "attendees": [{
+      "attendees": [
+        {
           "id": "ghi789",
           "name": "Beth Swanson"
         },
@@ -66,7 +69,8 @@
       "location": "Puptown ",
       "date": "Dec 2 2019",
       "time": "1:00",
-      "attendees": [{
+      "attendees": [
+        {
           "id": "abc123",
           "name": "Adam Jahr"
         },
@@ -346,6 +350,24 @@
       "location": "Your House",
       "date": "",
       "time": "5:00",
+      "attendees": []
+    },
+    {
+      "id": 2323359,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "title": "SUCCESS",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
       "attendees": []
     }
   ]
